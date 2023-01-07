@@ -47,7 +47,7 @@ IP=$(wget -qO- ipv4.icanhazip.com)
 clear
 echo -e "\E[44;1;37m    ATUALIZANDO O PAINELWEB GESTOR-SSH     \E[0m"
 echo ""
-echo -e "                              \033[1;31mBy @TECNO_NET PRO\033[1;36m"
+echo -e "                              \033[1;31mBy @jhona70\033[1;36m"
 echo -e "   GESTOR-SSH" | figlet
 echo ""
 clear

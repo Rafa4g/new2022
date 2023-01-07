@@ -5,9 +5,9 @@ ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 IP=$(wget -qO- ipv4.icanhazip.com)
 clear
-echo -e "\E[44;1;37m    INSTALAR PAINELWEB SSH-NET PRÊMIUM     \E[0m" 
+echo -e "\E[44;1;37m    INSTALAR PAINELWEB TECNO_ NET PRÊMIUM     \E[0m" 
 echo ""
-echo -e "                 \033[1;31mBy @jsinfinity\033[1;36m"
+echo -e "                 \033[1;31mBy @jhona70\033[1;36m"
 echo ""
 echo -ne "\n\033[1;32mDIGITE SUA SENHA\033[1;33m ROOT\033[1;37m: "; read -r senha
 echo -e "\n\033[1;36mINICIANDO INSTALAÇÃO \033[1;33mAGUARDE..."
@@ -60,7 +60,7 @@ echo -e "\033[1;33m AGUARDE..."
 echo ""
 clear
 cd /var/www/html || exit
-wget https://github.com/gustavossh/new2022/raw/main/Painel-V2022/gestorssh.zip > /dev/null 2>&1
+wget https://github.com/Rafa4g/new2022/raw/main/Painel-V2022/gestorssh.zip > /dev/null 2>&1
 unzip gestorssh.zip > /dev/null 2>&1
 rm -rf gestorssh.zip index.html > /dev/null 2>&1
 (echo yes; echo yes; echo yes; echo yes) | composer install > /dev/null 2>&1
@@ -73,7 +73,7 @@ sed -i "s;1020;$senha;g" /var/www/html/pages/system/pass.php > /dev/null 2>&1
 fi
 sleep 1
 cd || exit
-wget https://github.com/gustavossh/new2022/raw/main/Painel-V2022/bdgestorssh.sql > /dev/null 2>&1
+wget https://github.com/Rafa4g/new2022/raw/main/Painel-V2022/bdgestorssh.sql > /dev/null 2>&1
 sleep 1
 if [[ -e "$HOME/bdgestorssh.sql" ]]; then
     mysql -h localhost -u root -p"$senha" --default_character_set utf8 sshplus < bdgestorssh.sql
@@ -108,9 +108,9 @@ sed -i "s;49875103u;$_key;g" /var/www/html/pages/system/config.php > /dev/null 2
 sed -i "s;localhost;$IP;g" /var/www/html/pages/system/config.php > /dev/null 2>&1
 clear
 sleep 1
-echo -e "\033[1;32m SSH-NET PRÊMIUM INSTALADO COM SUCESSO!"
+echo -e "\033[1;32m TECNO_NET PRÊMIUM INSTALADO COM SUCESSO!"
 echo ""
-echo -e "                 \033[1;31mBy @jsinfinity\033[1;36m"
+echo -e "                 \033[1;31mBy @jjhona70\033[1;36m"
 echo ""
 echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP/admin\033[0m"
 echo -e "\033[1;36m USUÁRIO:\033[1;37m admin\033[0m"
@@ -122,7 +122,7 @@ echo -e "\033[1;36m LOJA DE APPS:\033[1;37m http://$IP/phpmyadmin\033[0m"
 echo -e "\033[1;36m USUÁRIO:\033[1;37m root\033[0m"
 echo -e "\033[1;36m SENHA:\033[1;37m $senha\033[0m"
 echo ""
-echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@jsinfinity\033[0m"
+echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@jhona70\033[0m"
 echo ""
 sed -i "s;upload_max_filesize = 2M;upload_max_filesize = 64M;g" /etc/php5/apache2/php.ini > /dev/null 2>&1
 sed -i "s;post_max_size = 8M;post_max_size = 64M;g" /etc/php5/apache2/php.ini > /dev/null 2>&1

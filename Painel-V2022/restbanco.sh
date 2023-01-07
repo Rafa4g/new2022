@@ -32,9 +32,9 @@ clear
 mkdir /root/restaurar > /dev/null 2>&1
 clear
 echo ""
-echo -e "                              \033[1;31mBy @jsinfinity\033[1;36m"
+echo -e "                              \033[1;31mBy @jhona70\033[1;36m"
 echo ""
-echo -e "\033[1;33mRESTAURAR BANCO DE DADOS DO PAINEL JSINFINITY-SSH!\033[0m" 
+echo -e "\033[1;33mRESTAURAR BANCO DE DADOS DO PAINEL TECNO_NET PRO!\033[0m" 
 echo ""
 echo -e "\n\033[1;33mÉ NECESSÁRIO O PAINEL INSTALADO E O\nARQUIVO (\033[1;32msshplus.sql\033[1;33m) NA PASTA (root/restaurar)!\033[0m\n"
 echo ""

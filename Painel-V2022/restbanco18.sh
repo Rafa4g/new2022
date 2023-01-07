@@ -34,7 +34,7 @@ clear
 echo ""
 echo -e "                              \033[1;31mBy @jhona70[1;36m"
 echo ""
-echo -e "\033[1;33mRESTAURAR BANCO DE DADOS DO PAINEL TECNO_NET PRO!\033[0m" 
+echo -e "\033[1;33mRESTAURAR BANCO DE DADOS DO PAINEL TECNO_NET PRO\033[0m" 
 echo ""
 echo -e "\n\033[1;33mÉ NECESSÁRIO O PAINEL INSTALADO E O\nARQUIVO (\033[1;32msshplus.sql\033[1;33m) NA PASTA (root/restaurar)!\033[0m\n"
 echo ""
@@ -73,7 +73,7 @@ pweb
 mysql -h localhost -u sshplus -p$passdb -e "drop database sshplus"
 mysql -h localhost -u sshplus -p$passdb -e 'CREATE DATABASE sshplus'
 mysql -h localhost -u sshplus -p$passdb --default_character_set utf8 sshplus < /root/restaurar/sshplus.sql
-echo -e "                              \033[1;31mBy @jsinfinity\033[1;36m"
+echo -e "                              \033[1;31mBy @jhona70\033[1;36m"
 echo ""
 echo -e "\n\033[1;32mDADOS RESTAURADO COM SUCESSO!\033[0m"
 echo ""
